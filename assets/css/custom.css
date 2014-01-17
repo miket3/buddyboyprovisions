@@ -1,0 +1,287 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+	background: url("../../assets/images/header-bg.jpg") no-repeat scroll center 0 rgba(0, 0, 0, 0);
+	background-size: 100% 500px;
+	padding-bottom: 40px;
+	color: #674434;
+	width:100%;
+}
+
+a.no-attrib {
+  background: transparent;
+  color: #FDD017 !important;
+}
+a:focus.no-attrib {
+  outline: 0 !important;
+  color: #FDD017 !important;
+}
+a:active.no-attrib,
+a:hover.no-attrib {
+text-decoration: none;
+  outline: 0 !important;
+  color: #FDD017 !important;
+}
+
+p {
+
+	font-family: arial,"Courier new",Arial !important;
+	font-size:large !important;
+	
+}
+#myCanvas {
+	position: absolute; // reposition logo from the natural layout
+	left: 15px;
+	right: 320px;
+	top: 160px;
+	width: 500px;
+	height: 620px;
+	z-index: -1;
+}
+
+.no-display {
+	display:none;
+	visibility:hidden;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+	padding-left: 0;
+	padding-right: 0;
+}
+.navbar-wrapper .navbar {
+	padding-left: 0px;
+	padding-right:0px;
+}
+
+.navbar-nav {
+	font-size:18px;
+	color:#FFF !important;
+
+}
+
+.navbar-brand {
+	color:#FDD017 !important;
+}
+
+#bh-logo {
+	width: 116px;
+	height: 90px;
+	padding: 0px;
+	opacity:1;
+}
+
+#head-company {
+	font-size:32px;
+}
+#head-address {
+	font-size:12px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+	height: 20%;
+	margin-bottom: 60px;
+	width: 50%;
+}
+
+/* #### Mobile Phones Portrait and Landscape#### */
+@media screen and (max-device-width: 640px){
+	/* some CSS here */
+	.carousel {
+		height: 20%;
+		margin-bottom: 60px;
+		width: 90%;
+	}
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+	z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+	height: 300px;
+	background-color: #777;
+}
+.carousel-inner > .item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 300px;
+}
+
+#myCarousel {
+	margin: 0px auto;
+	margin-top: 160px;
+	margin-bottom: 0px auto;
+	margin-left: 0px auto;
+	margin-right: 0px auto;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.marketing h2 {
+	font-weight: normal;
+}
+.marketing .col-lg-4 p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+	margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+	/* Remove the edge padding needed for mobile */
+	.marketing {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	/* Navbar positioning foo */
+	.navbar-wrapper {
+		margin-top: 0px;
+	}
+	.navbar-wrapper .container {
+		padding-left:  15px;
+		padding-right: 15px;
+	}
+	.navbar-wrapper .navbar {
+		padding-left:  0;
+		padding-right: 0;
+	}
+
+	/* The navbar becomes detached from the top, so we round the corners */
+	.navbar-wrapper .navbar {
+		border-radius: 4px;
+	}
+
+	/* Bump up size of carousel content */
+	.carousel-caption p {
+		margin-bottom: 20px;
+		font-size: 21px;
+		line-height: 1.4;
+	}
+
+	.featurette-heading {
+		font-size: 50px;
+	}
+
+}
+
+@media (min-width: 992px) {
+	.featurette-heading {
+		margin-top: 120px;
+	}
+}
+
+#contact-container {
+	color:#3300ff; 
+	background-color:#33CCFF;
+    margin-top:150px;
+	height: 760px;
+	width:50%;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+
+/* Iphones are 640px wide. Should be about smallest to deal with.*/
+@media screen and (max-device-width: 640px){
+	#contact-container {
+		width:100%;
+	}
+	
+	#head-company-name {
+		font-size:22px;
+		max-width: 600px;
+		word-wrap: break-word;
+	}
+}
+
+
+.form-signin {
+	max-width: 100%;
+	padding: 15px;
+	margin: 0 auto;
+	color:#3300ff; 
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+.form-signin .checkbox {
+	font-weight: normal;
+}
+.form-signin .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+.form-signin input[type="text"] {
+	margin-bottom: -1px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.btn {
+	font-size:18px;
+}

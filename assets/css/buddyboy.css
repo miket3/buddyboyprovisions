@@ -1,0 +1,170 @@
+body { 
+	margin: 135px 0px 0px 60px;
+	color: black;
+}
+
+p {
+    font-weight: normal;
+    color: gray; } 
+
+h1 {
+     color: white;
+     font-family: arial;
+     font-size: 16px;
+     font-weight: bold; }
+
+.header_table {
+     border: double blue;
+     color: blue;
+     width:100%; }
+
+div#biz_name {
+    color:red; 
+   font-size: 1em;
+   font-weight:bold;}
+
+div#biz_phone {
+    color:red; 
+   font-size: 1em;
+   font-weight:bold;}
+
+
+ul.mainmenu {
+     list-style: none;
+     text-align:center;
+     font-family: verdana;
+     font-size: 16px;
+     margin:0px;
+     padding:0px; }
+
+ul.mainmenu li {
+    margin:0;
+    padding:4px; }
+
+a.menuitem:link     { color: blue; text-decoration: none }
+a.menuitem:active   { color: red; text-decoration: none }
+a.menuitem:visited  { color: blue; text-decoration: none }
+a.menuitem:hover    { color: red; text-decoration: underline; font-weight: bold }
+
+a.linkitem:link     { color: blue; text-decoration: none }
+a.linkitem:active   { color: red; text-decoration: none }
+a.linkitem:visited  { color: blue; text-decoration: none }
+a.linkitem:hover    { color: red; text-decoration: underline; font-weight: bold }
+
+
+div.mainmenu, div#product_images { margin-top: 40px; }
+
+div#header, div#footer {
+    border:2px solid red;
+    width:100%; }
+
+div#main_left, div#main_right {
+  border:2px solid green;
+  width:160px;
+  float:left;
+  margin:10px 0px 10px 5px;
+  padding:2px;
+}
+
+
+div#main_center {
+  width:640px;
+  float:left;
+  margin:10px 0px 10px 5px;
+}
+
+
+.header_links {
+    text-align: left; }
+
+.header_left, .header_right, .xmain_left, .xmain_right {
+    float: left;
+    width: 160px; }
+
+
+.header_center {
+     float: left;
+     width: 644px;
+     text-align: center;
+     font-family: vedana, small-caps 400 16px arial;
+     color: #000000; }
+
+
+.title1, .par-title, .container_title {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    border: 0px black solid;
+    border-bottom: 0px black solid;
+    background: #ffffff; }
+
+.box1, .par-body, .container_text {
+    color: black;
+    border: 0px black solid;
+    background: #ffffff;
+    font-family: verdana;
+    font-size: 1em;
+    font-weight: normal; }
+
+.par-body { padding: 8px; padding-bottom:20px; }
+
+.picture-desc {
+     float: left;
+     width: 340px; }
+
+#thumanns_footer {
+  clear: both;
+}
+
+	/* column container */
+	.colmask {
+		position:relative;	/* This fixes the IE7 overflow hidden bug */
+		clear:both;
+		float:left;
+		width:100%;			/* width of whole page or table */
+		overflow:hidden;		/* This chops off any overhanging divs */
+	}
+	/* common column settings */
+	.colright,
+	.colmid,
+	.colleft {
+		float:left;
+		width:100%;			/* width of page */
+		position:relative;
+	}
+	.col1,
+	.col2,
+	.col3 {
+		float:left;
+		position:relative;
+		padding:0 0 0 0;	/* no left and right padding on columns, we just make them narrower instead 
+						only padding top and bottom is included here, make it whatever value you need */
+		overflow:hidden;
+	}
+	/* 3 Column settings */
+	.threecol {
+		background:#fff;		/* right column background colour */
+	}
+	.threecol .colmid {
+		right:20%;			/* width of the right column */
+		background:#fff;		/* center column background colour */
+	}
+	.threecol .colleft {
+		right:60%;			/* width of the middle column */
+		background:#fff;	/* left column background colour */
+	}
+	.threecol .col1 {
+		width:60%;			/* width of center column content (column width minus padding on either side) */
+		left:100%;			/* 100% plus left padding of center column */
+	}
+	.threecol .col2 {
+		width:20%;			/* Width of left column content (column width minus padding on either side) */
+		left:20%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+	}
+	.threecol .col3 {
+		width:20%;			/* Width of right column content (column width minus padding on either side) */
+		left:85%;			/* Please make note of the brackets here:
+						(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+	}
+
+

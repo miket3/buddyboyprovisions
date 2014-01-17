@@ -1,0 +1,47 @@
+		<div class="navbar-wrapper">
+			<div class="container">
+
+				<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div itemscope itemtype="http://schema.org/Organization" class="navbar-brand" id="head-company">
+								<div id= "head-company-name" itemprop="name"><a class="no-attrib" href="home">{{CompanyName}}</a><br></div>
+								<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" id="head-address"> 
+									<span itemprop="addressLocality">{{CompanyCity}}</span>, 
+									<span itemprop="addressRegion">{{CompanyState}}</span></span><br>
+									<span id="head-phone"><a id="phone" href="tel:{{CompanyPhone}}" class="btn btn-primary btn-info" itemprop="telephone">
+											<span class="glyphicon glyphicon-earphone"></span> {{CompanyPhone}}</a></span></div>
+	
+						</div>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="home">Home</a></li>
+								<li><a href="contact">Email Us</a></li>
+								<li class="dropdown">
+									<a href="products" class="dropdown-toggle " data-toggle="dropdown">Products <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="products/turkey">Turkey</a></li>
+										<li><a href="#">Ham</a></li>
+										<li><a href="#">Beef</a></li>
+										<li><a href="#">Bologna</a></li>
+										<li><a href="#">Cheese</a></li>
+										<li><a href="#">Salads</a></li>
+										<li class="divider"></li>
+										<li class="dropdown-header">Nav header</li>
+										<li><a href="vsboarshead">vs Boar's Head</a></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>

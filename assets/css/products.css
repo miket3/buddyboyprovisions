@@ -1,0 +1,20 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+	background: url("../../assets/images/header-bgx.jpg") no-repeat scroll center 0 rgba(0, 0, 0, 0) !important;
+	background-size: 100% 500px;
+	padding-bottom: 40px;
+	color: #FFF;
+	width:100%;
+}
+
+#content-container {
+	color:#000;
+    margin-top:250px;
+    margin-left:40px;
+	width:80%;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}

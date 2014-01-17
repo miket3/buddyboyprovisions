@@ -1,0 +1,40 @@
+<div class="container" id="contact-container">
+
+		<form id="contact-form" class="form-signin" role="form" method="post" action="contact/submit">
+			<h2 class="form-signin-heading">Email Us</h2>
+			<label>Your Name</label>
+			<input type="text" class="form-control" name="name" placeholder="Name" required autofocus>
+<br>
+			<label>Your E-mail</label>
+			<input type="text" class="form-control" name="email" placeholder="Email" required>
+<br>
+			<label>Subject</label>
+			<select class="form-control" id="subject" name="subject" required>
+				<option selected value="na">
+					Choose One:
+				</option>
+
+				<option value="service">
+					General Customer Service
+				</option>
+
+				<option value="suggestions">
+					Suggestions
+				</option>
+
+				<option value="product">
+					Product Support
+				</option>
+			</select>
+<br>
+			<label>Message</label>
+			<textarea name="message" id="message" class="form-control" rows="4" required></textarea>
+<br>
+			<label>Human Verification</label>
+			{{{sweetcaptcha}}}
+			
+<br>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Send It</button>
+		</form>
+
+	</div> <!-- /container -->
