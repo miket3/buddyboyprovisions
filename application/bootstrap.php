@@ -2,7 +2,7 @@
 
 // -- Environment setup --------------------------------------------------------
 
-if (strpos($_SERVER['HTTP_HOST'], ".com") === true) {
+if (strpos($_SERVER['HTTP_HOST'], ".com") >1) {
 define('SITE_ENV', 'production');
 } else {
 define('SITE_ENV', 'local');
