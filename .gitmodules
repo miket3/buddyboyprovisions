@@ -1,9 +1,6 @@
 [submodule "system"]
 	path = system
 	url = https://github.com/kohana/core.git
-[submodule "modules/KOstache"]
-	path = modules/KOstache
-	url = https://github.com/miket3/KOstache.git
 [submodule "assets/boostrap"]
 	path = assets/boostrap
 	url = https://github.com/twbs/bootstrap.git
