@@ -3,8 +3,10 @@
 // -- Environment setup --------------------------------------------------------
 
 if (strpos($_SERVER['HTTP_HOST'], ".com") >1) {
+	$burl = "/";
 define('SITE_ENV', 'production');
 } else {
+	$burl = "/buddyboyprovisions/";
 define('SITE_ENV', 'local');
 }
 
@@ -109,7 +111,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/buddyboyprovisions/',
+	'base_url'   => $burl ,
 ));
 
 /**
